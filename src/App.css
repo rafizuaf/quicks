@@ -1,38 +1,260 @@
-.App {
+.leftBox {
+  width: 285px;
+  height: 100vh;
+  border-right: 1px solid #fff;
+}
+
+.rightBox {
+  width: 100%;
+}
+
+.searchInput {
+  background-color: #828282;
+  width: 100%;
+  border: none;
+  height: 58px;
+}
+
+.menuPosition {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.menus {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.menu1 {
+  background-color: #2F80ED;
+  margin-bottom: 27px;
+  margin-right: 34px;
+  margin-top: 20px;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+}
+
+.menu2 {
+  background-color: #F2F2F2;
+  margin-bottom: 27px;
+  z-index: -12;
+}
+
+.menu2Active {
+  background-color: #8785FF;
+  margin-bottom: 27px;
+}
+
+
+.menuLogo {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.texts {
+  margin-bottom: 0;
   text-align: center;
+  color: #F2F2F2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.workspace {
+  width: 734px;
+  height: 737px;
+  background-color: #FFF;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 110px;
+  margin-right: 34px;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.inboxSearch {
+  border: 1px solid #828282;
+  border-radius: 5px;
+  width: 666px;
+}
+
+.person {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #2F80ED;
+}
+
+.name {
+  color: #2F80ED;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.photoProfile {
+  width: 24px;
+  height: 24px;
+}
+
+.dates {
+  font-size: 12px;
+  color: #4F4F4F;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+}
+
+.receiveMessage {
+  background-color: #FCEED3;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.ownerName {
+  margin-bottom: 0px;
+  color: #E5A443;
+}
+
+
+.timestamp {
+  font-size: 10px;
+  color: #4F4F4F;
+}
+
+.displayChat {
+  height: 570px;
+  width: 726px;
+}
+
+.inputMessage {
+  position: absolute;
+  bottom: 0;
+}
+
+.formInputs {
+  width: 580px;
+  height: 40px;
+}
+
+.submitInputs {
+  width: 76px;
+  height: 40px;
+}
+
+.sentMessage {
+  background-color: #EEDCFF;
+}
+
+.options {
+  height: 5px;
+}
+
+.newTask {
+  width: 400px;
+  height: 220px;
+  border: 1px solid #4F4F4F;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  right: 0;
+  margin-top: 65px;
+}
+
+.taskCheck {
+  margin-top: 23px;
+}
+
+.taskTitleForm {
+  width: 350px;
+}
+
+.taskTitle {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.taskDisplay {
+  height: 650px;
+}
+
+.tasksDates {
+  border: 1px solid #828282;
+  border-radius: 5px;
+}
+
+.messageOption {
+  width: 126px;
+}
+
+@media screen and (max-height: 800px) {
+  .searchInput {
+    height: 35px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .menus {
+    width: 45px;
+    height: 45px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .menu1 {
+    margin-bottom: 27px;
+    margin-right: 34px;
+    margin-top: 20px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .workspace {
+    width: 474px;
+    height: 477px;
+    margin-bottom: 80px;
+    margin-right: 24px;
+    border-radius: 5px;
+  }
+
+  .inboxSearch {
+    width: 440px;
+  }
+
+  .person {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .name {
+    font-size: 12px;
+  }
+  
+  .photoProfile {
+    width: 20px;
+    height: 20px;
+  }
+
+  .dates {
+    font-size: 8px;
+  }
+
+  .displayChat {
+    height: 344px;
+    width: 466px;
+  }
+
+  .formInputs {
+    width: 340px;
+    height: 35px;
+  }
+  
+  .submitInputs {
+    width: 76px;
+    height: 35px;
+  }
+
+  .taskDisplay {
+    height: 390px;
   }
 }
